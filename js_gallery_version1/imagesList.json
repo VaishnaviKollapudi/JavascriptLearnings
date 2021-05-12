@@ -1,0 +1,23 @@
+{
+    "imagesList":[
+{
+            "url":"images/pic1.jpeg",
+            "name":"firstImage",
+            "info":"Me and my dad",
+            "currentDate":""
+
+        },
+        {
+            "url":"images/pic2.jpeg",
+            "name":"secondImage",
+            "info":"myFriends",
+            "currentDate":""
+        },
+        {
+            "url":"images/pic3.jpeg",
+            "name":"thirdImage",
+            "info":"nephew",
+            "currentDate":""
+        }
+    ]
+}
