@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-about">
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT ME</a></li>
+          <li><a href="contact.html" class="current">CONTACT ME</a></li>
+          <!-- <li><a href="gallery.html">GALLERY</a></li> -->
+          <li><a href="newgallery.html">GALLERY</a></li>
+          <li><a href="galleryAdmin.html">GALLERY ADMIN</a></li>
+        </ul>
+      </div>
+      <div class="title">
+        <h1>Contact Me!!</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <form class="form" name="contactForm" onsubmit="return validate();">
+        <div class="input-group">
+          <label for="name">Name</label><span id="namespan"></span><br />
+          <input
+            type="text"
+            name="name"
+            class="form-input"
+            placeholder="NAME..."
+          />
+        </div>
+        <br />
+        <div class="input-group">
+          <label for="email">Email</label><span id="emailspan"></span><br />
+          <input
+            type="email"
+            name="email"
+            class="form-input"
+            placeholder="EMAIL ID..."
+          />
+          <br />
+        </div>
+        <br />
+        <div class="input-group">
+          <label>Message</label><br />
+          <textarea
+            class="form-input"
+            cols="30"
+            rows="7"
+            placeholder="WRITE YOUR MESSAGE HERE !!"
+          ></textarea>
+          <br />
+        </div>
+        <br />
+        <div class="input-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

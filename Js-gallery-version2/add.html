@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADD IMAGE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <body>
+        <div class="container-gallery">
+            <div class="nav">
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="contact.html" >CONTACT ME</a></li>
+                <!-- <li><a href="gallery.html" >GALLERY</a></li> -->
+                <li><a href="newgallery.html" >GALLERY</a></li>
+                <li><a href="galleryAdmin.html"> GALLERY ADMIN</a></li>
+              </ul>
+            </div>
+        </div>
+
+        
+        <div class="container">
+          <form class="form" name="AddForm" action="galleryAdmin.html"  >
+            <div class="input-group">
+              <label for="url">URL</label><span id="urlspan"></span><br/>
+              <input
+                type="text"
+                name="url"
+                id="url"
+                class="form-input"
+                placeholder="URL..."
+              />
+            </div>
+            <br />
+            <div class="input-group">
+              <label for="name">Name</label><span id="namespan"></span><br/>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-input"
+                placeholder="NAME..."
+              />
+            </div>
+            <br />
+            <div class="input-group">
+              <label for="information">Information</label><span id="infospan"></span><br/>
+              <textarea
+                class="form-input"
+                name="info"
+                id="info"
+                cols="30"
+                rows="7"
+                placeholder="WRITE YOUR DESCRIPTION HERE !!"
+              ></textarea>
+            </div>
+            <div class="input-group">
+              <label for="date">Current Date</label> <span id="datespan"></span><br/>
+              <input type="date" name="currentDate" id="currentDate" class="form-input" >
+            </div>
+            <br />
+            <div class="input-group">
+              <button type="submit" onclick="return addImage();">ADD</button>
+            </div>
+          </form>
+
+
+  </body>
+  <script src="js/admin.js" defer></script>
+
+</html>

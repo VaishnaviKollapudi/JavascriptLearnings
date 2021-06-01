@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADD IMAGE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/admin.js"></script>
+  </head>
+  <body>
+
+    <body>
+        <div class="container-gallery">
+            <div class="nav">
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="contact.html" >CONTACT ME</a></li>
+                <li><a href="newgallery.html" >GALLERY</a></li>
+                <li><a href="galleryAdmin.html"> GALLERY ADMIN</a></li>
+              </ul>
+            </div>
+        </div>
+
+        
+        <div class="container">
+          <form class="form" name="updateForm" action="galleryAdmin.html"  >
+            <div class="input-group">
+              <label for="updateURL">URL</label><span id="urlspan"></span><br/>
+              <input
+                type="text"
+                name="updateURL"
+                id="updateURL"
+                class="form-input"
+              />
+            </div>
+            <br />
+            <!-- <div class="input-group">
+              <label for="updateName">Name</label><span id="namespan"></span><br/>
+              <input
+                type="text"
+                name="updateName"
+                id="updateName"
+                class="form-input"
+              />
+            </div> -->
+            <!-- <br /> -->
+            <div class="input-group">
+              <label for="updateInfo">Information</label><span id="infospan"></span><br/>
+              <!-- <textarea
+                class="form-input"
+                name="updateInfo"
+                id="updateInfo"
+                cols="30"
+                rows="7"
+              ></textarea> -->
+              <input class="form-input"
+              name="updateInfo"
+              id="updateInfo"/>
+            </div>
+            <div class="input-group">
+              <label for="updateDate">Current Date</label> <span id="datespan"></span><br/>
+              <input type="date" name="updateDate" id="updateDate" class="form-input" >
+            </div>
+            <br />
+            <div class="input-group">
+              <button type="submit" onclick="return updateImage();">UPDATE</button>
+            </div>
+            <div class="input-group">
+              <button type="submit" onclick="cancelUpdate();">CANCEL</button>
+            </div>
+          </form>
+  </body>
+  
+  <script>
+    populateUpdateForm()
+  </script>
+</html>
